@@ -169,8 +169,8 @@ df.loc[df['County'] == "EL PASO", "County Number"] = df["County Number"].max() +
 
 #** Standardised Cases of Address, city and county **#
 
-df['County'] = df['County'].str.capitalize()
-df['Address'] = df['Address'].str.capitalize()
-df['City'] = df['City'].str.capitalize()
+df['County'] = df['County'].str.title()
+df['Address'] = df['Address'].str.title()
+df['City'] = df['City'].str.title()
 
 df.to_csv(r'/Users/saptarshimaiti/Desktop/Data Preparation And Analysis/Project/Iowa_Liquor_Sales_Cleaned_v1.csv', index = False, header=True)
