@@ -167,6 +167,8 @@ for index, row in df_county_number.iterrows():
 
 df.loc[df['County'] == "EL PASO", "County Number"] = df["County Number"].max() + 1
 
+#** Standardised Cases of Address, city and county **#
+
 df['County'] = df['County'].str.capitalize()
 df['Address'] = df['Address'].str.capitalize()
 df['City'] = df['City'].str.capitalize()
